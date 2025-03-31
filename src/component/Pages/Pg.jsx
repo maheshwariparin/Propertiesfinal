@@ -1177,11 +1177,12 @@ const PG = () => {
 
   useEffect(() => {
     dispatch(fetchProperties());
-    runFilter();
 
   }, [dispatch]);
 
- 
+  useEffect(() => {
+    runFilter();
+  }, []); 
 
   if (loading) {
     return (

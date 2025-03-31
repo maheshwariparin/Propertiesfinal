@@ -665,9 +665,12 @@ const Rent_Lease = () => {
 
   useEffect(() => {
     dispatch(fetchProperties());
-    runFilter();
 
   }, [dispatch]);
+
+  useEffect(() => {
+    runFilter();
+  }, []); 
 
   // useEffect(() => {
   //   if (rentProperties.length > 0) {
