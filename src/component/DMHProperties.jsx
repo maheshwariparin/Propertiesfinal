@@ -98,7 +98,7 @@ const DMHProperties = () => {
               <div className="text-center">
                 <div className="h-24 w-24 rounded-full bg-blue-100 mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-blue-600">D</div>
                 <h3 className="text-xl font-bold text-gray-800">Deep Brahmbhatt</h3>
-                <p className="text-blue-600 font-medium">Property Expert</p>
+               
               </div>
               <div className="mt-4 text-gray-600">
                 <p className="font-medium mt-4">Contact: +91 99250-01226</p>
@@ -129,7 +129,7 @@ const DMHProperties = () => {
               <div className="text-center">
                 <div className="h-24 w-24 rounded-full bg-purple-100 mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-purple-600">H</div>
                 <h3 className="text-xl font-bold text-gray-800">Harsh Maheshwari</h3>
-                <p className="text-purple-600 font-medium">Legal & Finance</p>
+                
               </div>
               <div className="mt-4 text-gray-600">
    
