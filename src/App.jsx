@@ -50,6 +50,7 @@ function App() {
         <Route path="/3bhk-flat-Ahmedabad" element={<Home />} />
         <Route path="/2bhk-flat-Ahmedabad" element={<Home />} />
         <Route path="/1bhk-flat-Ahmedabad" element={<Home />} />
+        <Route path="/4bhk-bunglow-Ahmedabad" element={<Home />} />
         <Route path="/residential" element={<Home />} />
         <Route path="/commercial" element={<Home />} />
         <Route path="/plot" element={<Home />} />
