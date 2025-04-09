@@ -1137,9 +1137,14 @@ export default function Home() {
 </div>
             
 <div className="mt-120 items-center md:mt-40 justify-center md:ml-105">
-   <h1 className="text-4xl font-serif text-center animate-blue-wave">
+{/*    <h1 className="text-4xl font-serif text-center animate-blue-wave">
         Discover Our Feature Listings
-      </h1>
+      </h1> */
+        <div className="flex items-center justify-center min-h-screen">
+  <h1 className="text-2xl md:text-3xl lg:text-4xl font-serif text-center animate-blue-wave">
+    Discover Our Feature Listings
+  </h1>
+</div>}
 
       <style jsx global>{`
         @keyframes blue-wave {
