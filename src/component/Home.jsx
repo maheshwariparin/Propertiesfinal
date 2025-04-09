@@ -991,7 +991,9 @@ export default function Home() {
     </div>
 
           
-    <div className="relative md:absolute md:bottom-[-220px]  md:ml-[27%] w-full md:w-[600px] max-w-[95%] mx-auto md:max-w-none mt-10 md:mt-0 transform md:-translate-y-1/2 z-10">
+   
+     <div className="relative md:absolute md:bottom-[-220px]  md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 w-full max-w-[95%] md:max-w-[600px] mx-auto mt-10 md:mt-0 z-10">
+       
     <div className="bg-white rounded-2xl md:rounded-4xl shadow-2xl mx-2 md:mx-0">
         <div className="space-y-4 md:space-y-6 rounded-2xl md:rounded-4xl">
             <div className="p-4 bg-white rounded-2xl md:rounded-4xl">
