@@ -21,6 +21,7 @@ import BlogPage from "./component/BlogPage";
 import BlogMain from "./component/BlogMain"
 import ContactUs from "./component/ContactUs";
 import DMHProperties from "./component/DMHProperties";
+import Calculator from "./component/Calculator";
 function App() {
   return (
     <Router>
@@ -55,7 +56,7 @@ function App() {
         <Route path="/commercial" element={<Home />} />
         <Route path="/plot" element={<Home />} />
         <Route path="/ourstory" element={<DMHProperties />} />
-       
+        <Route path="/rentclaculator" element={<Calculator />} />
         </Routes>
     </Router>
   );

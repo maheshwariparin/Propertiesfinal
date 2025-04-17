@@ -136,7 +136,21 @@ const Navbar = () => {
                OurStory
               </NavLink>
             </li>
-
+            <li>
+              <NavLink
+                to="/rentclaculator"
+                onClick={() => setIsMenuOpen(false)}
+                className={({ isActive }) => 
+                  `inline-flex items-center justify-center h-10 px-4 text-sm lg:text-base transition-all duration-300 ${
+                    isActive 
+                      ? 'text-blue-500 bg-blue-100 rounded-2xl' 
+                      : 'text-gray-600 hover:text-blue-500 hover:bg-blue-100 rounded-2xl'
+                  }`
+                }
+              >
+               Rent Calculator
+              </NavLink>
+            </li>
           <li>
             <a 
               className="flex items-center text-gray-600 rounded-lg hover:bg-blue-100 px-3 py-2 hover:text-blue-500 transition-colors text-sm lg:text-base"
@@ -286,6 +300,21 @@ const Navbar = () => {
                 }
               >
                OurStory
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/rentclaculator"
+                onClick={() => setIsMenuOpen(false)}
+                className={({ isActive }) => 
+                  `block px-4 py-3 rounded-lg ${
+                    isActive 
+                      ? 'text-blue-500 bg-blue-100' 
+                      : 'text-gray-600 hover:bg-blue-100'
+                  }`
+                }
+              >
+                Rent Calculator
               </NavLink>
             </li>
           </ul>
