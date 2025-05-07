@@ -133,7 +133,7 @@ const DMHProperties = () => {
               </div>
               <div className="mt-4 text-gray-600">
    
-                <p className="font-medium mt-4">Contact: +91 70163-20063</p>
+                <p className="font-medium mt-4">Contact: +91 74908-09592</p>
               </div>
             </div>
           </div>
