@@ -330,30 +330,7 @@ const ContactUs = () => {
                 >
                   <FaInstagram className="text-xl" />
                 </a>
-                <a 
-                  href="https://linkedin.com/company/dmhproperties" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 hover:bg-blue-700 hover:text-white transition-colors"
-                >
-                  <FaLinkedin className="text-xl" />
-                </a>
-                <a 
-                  href="https://twitter.com/dmhproperties" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition-colors"
-                >
-                  <FaTwitter className="text-xl" />
-                </a>
-                <a 
-                  href="https://youtube.com/dmhproperties" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition-colors"
-                >
-                  <FaYoutube className="text-xl" />
-                </a>
+               
               </div>
             </div>
           </div>
