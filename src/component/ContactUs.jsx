@@ -361,53 +361,106 @@ const ContactUs = () => {
       </div>
       
       {/* Map Section */}
-      <div className="w-full h-96 bg-gray-200 relative rounded-lg overflow-hidden shadow-xl">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.924509041447!2d72.4817423!3d23.0283845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b8a0f1e3e3d%3A0x9a9e9b9b9b9b9b9b!2sDMH%20Properties!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin&markers=color:red%7C23.0283845,72.4843172&zoom=17"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          title="DMH Properties Location"
-          className="absolute inset-0"
-        ></iframe>
+      import React from 'react';
+import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 
-        <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-lg shadow-md flex items-center">
-          <div className="text-red-500 mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-            </svg>
-          </div>
-          <div>
-            <p className="font-bold text-gray-800">DMH Properties</p>
-            <p className="text-sm text-gray-600">B/302, Sun South Street</p>
-          </div>
+const containerStyle = {
+  width: '100%',
+  height: '100%',
+};
+
+const center = {
+  lat: 23.0283845,
+  lng: 72.4843172,
+};
+
+const MapComponent = () => {
+  return (
+    <div className="w-full h-96 bg-gray-200 relative rounded-lg overflow-hidden shadow-xl">
+      <LoadScript googleMapsApiKey="YOUR_API_KEY">
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={17}
+        >
+          <Marker
+            position={center}
+            title="DMH Properties"
+            icon="https://maps.google.com/mapfiles/ms/icons/red-dot.png" // Replace with custom icon URL
+          />
+        </GoogleMap>
+      </LoadScript>
+
+      <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-lg shadow-md flex items-center">
+        <div className="text-red-500 mr-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fillRule="evenodd"
+              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+              clipRule="evenodd"
+            />
+          </svg>
         </div>
-
-        <div className="absolute bottom-4 right-4 mr-10 flex space-x-2">
-          <a 
-            href="https://maps.app.goo.gl/m4mPE7jMbh9fi7Sz6" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white p-3 rounded-full shadow-lg hover:bg-blue-50 transition-colors"
-            title="Get Directions"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </a>
-          <button
-            onClick={() => window.open('https://maps.app.goo.gl/m4mPE7jMbh9fi7Sz6')}
-            className="bg-white p-3 rounded-full shadow-lg hover:bg-blue-50 transition-colors"
-            title="Open in Google Maps"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
+        <div>
+          <p className="font-bold text-gray-800">DMH Properties</p>
+          <p className="text-sm text-gray-600">B/302, Sun South Street</p>
         </div>
       </div>
+
+      <div className="absolute bottom-4 right-4 mr-10 flex space-x-2">
+        <a
+          href="https://maps.app.goo.gl/m4mPE7jMbh9fi7Sz6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white p-3 rounded-full shadow-lg hover:bg-blue-50 transition-colors"
+          title="Get Directions"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+        <button
+          onClick={() => window.open('https://maps.app.goo.gl/m4mPE7jMbh9fi7Sz6')}
+          className="bg-white p-3 rounded-full shadow-lg hover:bg-blue-50 transition-colors"
+          title="Open in Google Maps"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default MapComponent;
       
       {/* Footer CTA */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
