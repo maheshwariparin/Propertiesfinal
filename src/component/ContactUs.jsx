@@ -362,7 +362,7 @@ const ContactUs = () => {
       
    <div className="w-full h-96 bg-gray-200 relative rounded-lg overflow-hidden shadow-xl">
   <iframe
-    src="https://www.google.com/maps/place/DMH+Properties/@23.0128429,72.4676033,17z/data=!3m1!4b1!4m6!3m5!1s0x395e9b7b562c2f8b:0x8030d632835a5a6!8m2!3d23.012838!4d72.4701782!16s%2Fg%2F11stjtdlln?entry=tts&g_ep=EgoyMDI1MDMwMy4wIPu8ASoASAFQAw%3D%3D"
+    src="https://maps.app.goo.gl/ZE66ijyZJJCg7ByVA"
     width="100%"
     height="100%"
     style={{ border: 0 }}
