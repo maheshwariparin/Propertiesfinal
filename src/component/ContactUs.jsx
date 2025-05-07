@@ -243,7 +243,7 @@ const ContactUs = () => {
                 </p>
                 <p className="text-gray-600">
                   <a href="tel:+919925001226" className="hover:text-blue-600 transition-colors">
-                    +91 70163-20063
+                    +91 74908-09592
                   </a>
                 </p>
                 <p className="text-gray-600">
