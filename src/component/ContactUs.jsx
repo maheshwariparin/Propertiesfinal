@@ -362,7 +362,7 @@ const ContactUs = () => {
       
    <div className="w-full h-96 bg-gray-200 relative rounded-lg overflow-hidden shadow-xl">
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086!2d144.963058!3d-37.814107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ4JzUwLjgiUyAxNDTCsDU3JzQ3LjAiRQ!5e0!3m2!1sen!2sus!4v1631234567890!5m2!1sen!2sus"
+    src="https://www.google.com/maps/place/DMH+Properties/@23.0128429,72.4676033,17z/data=!3m1!4b1!4m6!3m5!1s0x395e9b7b562c2f8b:0x8030d632835a5a6!8m2!3d23.012838!4d72.4701782!16s%2Fg%2F11stjtdlln?entry=tts&g_ep=EgoyMDI1MDMwMy4wIPu8ASoASAFQAw%3D%3D"
     width="100%"
     height="100%"
     style={{ border: 0 }}
