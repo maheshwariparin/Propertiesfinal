@@ -360,22 +360,6 @@ const ContactUs = () => {
         </div>
       </div>
       
-      {/* Map Section */}
-      import React from 'react';
-import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
-
-const containerStyle = {
-  width: '100%',
-  height: '100%',
-};
-
-const center = {
-  lat: 23.0283845,
-  lng: 72.4843172,
-};
-
-const MapComponent = () => {
-  return (
     <div className="w-full h-96 bg-gray-200 relative rounded-lg overflow-hidden shadow-xl">
       <LoadScript googleMapsApiKey="YOUR_API_KEY">
         <GoogleMap
@@ -457,10 +441,7 @@ const MapComponent = () => {
         </button>
       </div>
     </div>
-  );
-};
 
-export default MapComponent;
       
       {/* Footer CTA */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
