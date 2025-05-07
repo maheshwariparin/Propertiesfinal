@@ -370,26 +370,7 @@ const ContactUs = () => {
     title="DMH Properties Location"
   ></iframe>
 
-  <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-lg shadow-md flex items-center">
-    <div className="text-red-500 mr-2">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path
-          fillRule="evenodd"
-          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div>
-      <p className="font-bold text-gray-800">DMH Properties</p>
-      <p className="text-sm text-gray-600">B/302, Sun South Street</p>
-    </div>
-  </div>
+  
 
   <div className="absolute bottom-4 right-4 mr-10 flex space-x-2">
     <a
