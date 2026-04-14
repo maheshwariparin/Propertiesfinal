@@ -3,12 +3,12 @@
 
     <!-- Static Pages -->
 <url>
-    <loc>https://dmhproperties.in/</loc>
+    <loc>https://dmhproperties.co.in/</loc>
     <priority>1.0</priority>
 </url>
 
-<!-- Shela -->
-<url>
+
+<!-- <url>
     <loc>https://dmhproperties.in/3bhk-luxury-flat-shela</loc>
     <priority>0.9</priority>
 </url>
@@ -29,7 +29,7 @@
     <priority>0.8</priority>
 </url>
 
-<!-- Bopal -->
+
 <url>
     <loc>https://dmhproperties.in/3bhk-flat-bopal</loc>
     <priority>0.9</priority>
@@ -211,6 +211,6 @@
 </url>
 <url>
     <loc>https://dmhproperties.in/office-space-Ahmedabad</loc>
-</url>
+</url>  -->
 
 </urlset>
